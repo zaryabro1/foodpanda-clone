@@ -2,27 +2,23 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator, createAppContainer} from "react-navigation";
 import Splash from './src/screens/Splash';
+import Home from './src/screens/Home'
 
 
- class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.contianer}>
-      
+      <View style={styles.container}>
+        <Home/>
       </View>
         );
   }
 }
 
-const AppNavigator = createStackNavigator ({
-      Start: {
-        screen: Splash
-      }
-})
- export default createAppContainer(AppNavigator)
+
 
 const styles = {
-  contianer: {
+  container: {
     flex: 1
   }
 };
