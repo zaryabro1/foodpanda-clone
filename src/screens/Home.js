@@ -54,16 +54,30 @@ export default class Home extends Component {
                 </View>
                 <ScrollView>
                     <Text style={styles.categoriesHeading}>Order again from</Text>
-                    <RestaurantCard item={restaurantItem}/>
+                    <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <RestaurantCard item={restaurantItem}/>
+                    </TouchableOpacity>
                     <Text style={styles.categoriesHeading}>Recommended for you</Text>
 
                     <ScrollView horizontal={'true'}>
-                        <RestaurantCard item={restaurantItem}/>
-                        <RestaurantCard item={restaurantItem}/>
-                        <RestaurantCard item={restaurantItem}/>
-                        <RestaurantCard item={restaurantItem}/>
-                        <RestaurantCard item={restaurantItem}/>
-                        <RestaurantCard item={restaurantItem}/>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                            <RestaurantCard item={restaurantItem}/>
+                        </TouchableOpacity>
                     </ScrollView>
                     <View>
                         <Text style={styles.categoriesHeading}>All Restaurants</Text>
