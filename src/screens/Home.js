@@ -54,28 +54,28 @@ export default class Home extends Component {
                 </View>
                 <ScrollView>
                     <Text style={styles.categoriesHeading}>Order again from</Text>
-                    <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                    <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                         <RestaurantCard item={restaurantItem}/>
                     </TouchableOpacity>
                     <Text style={styles.categoriesHeading}>Recommended for you</Text>
 
                     <ScrollView horizontal={'true'}>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => {console.warn("Hello")}}>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('RestaurentsDetails')}}>
                             <RestaurantCard item={restaurantItem}/>
                         </TouchableOpacity>
                     </ScrollView>

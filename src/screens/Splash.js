@@ -2,13 +2,18 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 
+export default class Splash extends Component {
 
-export default class Splash extends Component  {
+    componentWillMount(): void {
+        setTimeout(() => this.props.navigation.navigate('Home'), 3000)
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <Image
-                source={require('../../assets/foodpandalogo.png')}/>
+                    source={require('../../assets/foodpandalogo.png')}/>
+
 
             </View>
         );
