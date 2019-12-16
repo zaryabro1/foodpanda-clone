@@ -44,7 +44,7 @@ export default class Home extends Component {
                             placeholder={'e.g. Japanese, Burgers...'}/>
                     </View>
                     <View>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('Filter')}}>
                             <Image
                                 source={require('../../assets/filter.png')}
                                 tintColor={'#D60E64'}

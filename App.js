@@ -5,13 +5,16 @@ import Home from './src/screens/Home';
 import RestaurentsDetails from './src/screens/RestaurentsDetails';
 import Splash from './src/screens/Splash';
 import Header from "./src/components/Header";
+import Filter from './src/screens/Filter'
 
 const StackNavigator = createStackNavigator({
         Home: Home,
         RestaurentsDetails: RestaurentsDetails,
-        Splash: Splash
+        Splash: Splash,
+        Filter: Filter
+
     },
-    {initialRouteName: "Splash",
+    {initialRouteName: "Home",
                 headerMode: "none"}
 
 
